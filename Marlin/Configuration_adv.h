@@ -977,7 +977,7 @@
    * If not defined, probe limits will be used.
    * Override with 'M422 S<index> X<pos> Y<pos>'.
    */
-  #define Z_STEPPER_ALIGN_XY { {  20, 150 }, { 250,  150 } }
+  #define Z_STEPPER_ALIGN_XY { {  30, 150 }, { 240,  150 } }
 
   /**
    * Orientation for the automatically-calculated probe positions.
@@ -1031,11 +1031,11 @@
 //
 // Add the G35 command to read bed corners to help adjust screws. Requires a bed probe.
 //
-#define ASSISTED_TRAMMING
+//#define ASSISTED_TRAMMING
 #if ENABLED(ASSISTED_TRAMMING)
 
   // Define positions for probe points.
-  #define TRAMMING_POINT_XY { {  30, 30 }, { 250,  30 }, { 250, 260 }, { 30, 260 } }
+  #define TRAMMING_POINT_XY { {  48, 48 }, { 250,  48 }, { 250, 260 }, { 48, 260 } }
 
   // Define position names for probe points.
   #define TRAMMING_POINT_NAME_1 "Front-Left"
